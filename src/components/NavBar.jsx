@@ -1,10 +1,15 @@
 const NavBar = () => {
   return (
-    <div className="div">
-      <h1>Zenned</h1>
-      <p>Stats</p>
-      <p>Stats</p>
-      <p>Stats</p>
+    <div className="nav-div">
+      <div className="nav-header">
+        <h1 className="nav-title">Lotus</h1>
+        <img id="nav-icon" src="assets/lotus (2).png" alt="lotus" />
+      </div>
+      <div className="nav-options">
+        <p className="nav-item">LOG</p>
+        <p className="nav-item">STATS</p>
+        <p className="nav-item">GET ZEN</p>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,47 @@
-.div {
-  display: flex;
-  justify-content: space-evenly;
+* {
+  font-family: "Monaco";
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgb(210, 217, 238);
 }
 
+.nav-div {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(210, 217, 238);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-title {
+  margin-left: 3rem;
+  color: rgb(42, 85, 214);
+  font-weight: 500;
+  font-size: ;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.nav-item {
+  margin-left: 2rem;
+  color: rgb(42, 85, 214);
+  font-size: 20px;
+}
+
+#nav-icon {
+  width: 75px;
+  height: 75px;
+  margin-left: 1rem;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
