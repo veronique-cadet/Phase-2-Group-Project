@@ -10,8 +10,8 @@
       "sleep": 7,
       "water": 5,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "3"
     }, 
     {
@@ -24,8 +24,8 @@
       "sleep": 6,
       "water": 8,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -38,8 +38,8 @@
       "sleep": 7,
       "water": 7,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -52,8 +52,8 @@
       "sleep": 7,
       "water": 5,
       "meals": 2,
-      "Exercise": "yes",
-      "Meditation": "yes",
+      "Exercise": "true",
+      "Meditation": "true",
       "Mood": "5"
     },
     {
@@ -66,8 +66,8 @@
       "sleep": 5,
       "water": 6,
       "meals": 2,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -80,8 +80,8 @@
       "sleep": 7,
       "water": 7,
       "meals": 2,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -94,8 +94,8 @@
       "sleep": 9,
       "water": 9,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "5"
     },
     {
@@ -108,8 +108,8 @@
       "sleep": 8,
       "water": 10,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "yes",
+      "Exercise": "true",
+      "Meditation": "true",
       "Mood": "4"
     },
     {
@@ -122,8 +122,8 @@
       "sleep": 9,
       "water": 9,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "5"
     },
     {
@@ -136,8 +136,8 @@
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "yes",
+      "Exercise": "true",
+      "Meditation": "true",
       "Mood": "5"
     },
     {
@@ -150,8 +150,8 @@
       "sleep": 7,
       "water": 10,
       "meals": 3,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -164,8 +164,8 @@
       "sleep": 9,
       "water": 8,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -178,8 +178,8 @@
       "sleep": 7,
       "water": 6,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -192,8 +192,8 @@
       "sleep": 6,
       "water": 8,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -206,8 +206,8 @@
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -220,8 +220,8 @@
       "sleep": 9,
       "water": 8,
       "meals": 2,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "5"
     },
     {
@@ -234,8 +234,8 @@
       "sleep": 5,
       "water": 10,
       "meals": 3,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "2"
     },
     {
@@ -248,8 +248,8 @@
       "sleep": 10,
       "water": 8,
       "meals": 2,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -262,8 +262,8 @@
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -276,8 +276,8 @@
       "sleep": 10,
       "water": 8,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "yes",
+      "Exercise": "true",
+      "Meditation": "true",
       "Mood": "5"
     },
     {
@@ -290,8 +290,8 @@
       "sleep": 8,
       "water": 9,
       "meals": 3,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -304,8 +304,8 @@
       "sleep": 7,
       "water": 8,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -318,8 +318,8 @@
       "sleep": 6,
       "water": 9,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -332,8 +332,8 @@
       "sleep": 6,
       "water": 10,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -346,8 +346,8 @@
       "sleep": 8,
       "water": 10,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "5"
     },
     {
@@ -360,8 +360,8 @@
       "sleep": 7,
       "water": 8,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -374,8 +374,8 @@
       "sleep": 6,
       "water": 7,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "3"
     },
     {
@@ -388,8 +388,8 @@
       "sleep": 6,
       "water": 9,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "no",
+      "Exercise": "false",
+      "Meditation": "false",
       "Mood": "2"
     },
     {
@@ -402,8 +402,8 @@
       "sleep": 7,
       "water": 10,
       "meals": 3,
-      "Exercise": "yes",
-      "Meditation": "no",
+      "Exercise": "true",
+      "Meditation": "false",
       "Mood": "4"
     },
     {
@@ -416,8 +416,8 @@
       "sleep": 9,
       "water": 7,
       "meals": 2,
-      "Exercise": "no",
-      "Meditation": "yes",
+      "Exercise": "false",
+      "Meditation": "true",
       "Mood": "4"
     }
         ]   
