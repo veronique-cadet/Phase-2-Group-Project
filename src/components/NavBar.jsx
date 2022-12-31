@@ -3,7 +3,7 @@ const NavBar = () => {
     <div className="nav-div">
       <div className="nav-header">
         <h1 className="nav-title">Lotus</h1>
-        <img id="nav-icon" src="assets/lotus (2).png" alt="lotus" />
+        <img id="nav-icon" src="assets/lotus (3).png" alt="lotus" />
       </div>
       <div className="nav-options">
         <p className="nav-item">LOG</p>
