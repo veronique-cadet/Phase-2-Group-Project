@@ -1,4 +1,4 @@
-const Main = () => {
+const Home = () => {
   return (
     <div>
       <video id="video" muted autoPlay={"autoplay"} preLoad="auto" loop>
@@ -11,4 +11,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;
