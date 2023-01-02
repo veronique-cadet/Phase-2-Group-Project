@@ -4,6 +4,9 @@ import "react-range-slider-input/dist/style.css";
 const Log = () => {
   return (
     <div className="other-pages">
+      {/* <h2 className="quote">
+        “Everything you can imagine is real.”―Pablo Picasso
+      </h2> */}
       <form className="form">
         <p className="form-title">Log</p>
         <label className="form-text" for="sleep">
