@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Log from "./components/Log";
 import Stats from "./components/Stats";
+import GetZen from "./components/GetZen.jsx";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Home />
       <Log />
       <Stats />
+      <GetZen />
       <Footer />
     </div>
   );

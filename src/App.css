@@ -6,19 +6,19 @@
 }
 
 .nav-div {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   /* background-color: rgb(210, 217, 238); */
   align-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   position: absolute;
   width: 100%;
   justify-content: space-between;
 }
 
 .nav-title {
-  margin-left: 3rem;
+  margin-left: 3.5rem;
   /* color: rgb(42, 85, 214); */
   color: rgb(255, 254, 254);
   font-weight: 500;
@@ -27,7 +27,7 @@
 
 .nav-options {
   display: flex;
-  margin-right: 3rem;
+  margin-right: 3.5rem;
   justify-content: flex-end;
 }
 
