@@ -1,13 +1,18 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
+import Home from "./components/Home";
+import Log from "./components/Log";
+import Stats from "./components/Stats";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <Main />
+      <Home />
+      <Log />
+      <Stats />
+      <Footer />
     </div>
   );
 }
