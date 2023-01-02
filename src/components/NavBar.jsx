@@ -1,16 +1,18 @@
+import { NavLink } from "react-router-dom";
+
 const NavBar = () => {
   return (
-    <div className="nav-div">
-      <div className="nav-header">
-        <h1 className="nav-title">Lotus</h1>
-        <img id="nav-icon" src="assets/lotus (3).png" alt="lotus" />
-      </div>
-      <div className="nav-options">
-        <p className="nav-item">LOG</p>
-        <p className="nav-item">STATS</p>
-        <p className="nav-item">GET ZEN</p>
-      </div>
-    </div>
+    <nav className="nav-options">
+      <NavLink to="log" className="nav-item">
+        LOG
+      </NavLink>
+      <NavLink to="stats" className="nav-item">
+        STATS
+      </NavLink>
+      <NavLink to="getzen" className="nav-item">
+        GET ZEN
+      </NavLink>
+    </nav>
   );
 };
 
