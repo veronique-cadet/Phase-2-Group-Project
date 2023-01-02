@@ -6,7 +6,7 @@
 }
 
 .nav-div {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   /* background-color: rgb(210, 217, 238); */
@@ -36,6 +36,10 @@
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
+}
+
+.nav-item:hover {
+  background-color: #cde2ff;
 }
 
 #nav-icon {
