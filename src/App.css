@@ -18,7 +18,7 @@
 }
 
 .nav-title {
-  margin-left: 3.5rem;
+  margin-left: 4rem;
   /* color: rgb(42, 85, 214); */
   color: rgb(255, 254, 254);
   font-weight: 500;
@@ -27,7 +27,7 @@
 
 .nav-options {
   display: flex;
-  margin-right: 3.5rem;
+  margin-right: 4rem;
   justify-content: flex-end;
 }
 
