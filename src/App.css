@@ -95,6 +95,16 @@ nav a.active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px #cde2ff solid;
+  border-radius: 50px;
+  background-color: #cde2ff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  padding: 2rem 3rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
 .form-title {
@@ -102,7 +112,7 @@ nav a.active {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 1rem;
-  margin-top: 7rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -111,4 +121,35 @@ nav a.active {
   font-size: 15px;
   font-weight: 500;
   margin-top: 0.5rem;
+}
+
+.checkbox-div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#meditation {
+  margin-left: 1rem;
+}
+
+#mood {
+  margin-top: 1rem;
+}
+
+#range {
+  width: 250px;
+}
+
+#form-submit {
+  margin-top: 2rem;
+  background-color: #cde2ff;
+  border: #cde2ff;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
