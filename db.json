@@ -10,9 +10,9 @@
       "sleep": 7,
       "water": 5,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": true,
+      "meditation": false,
+      "mood": "3"
     }, 
     {
       "id": 2,
@@ -24,9 +24,9 @@
       "sleep": 6,
       "water": 8,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 3,
@@ -38,9 +38,9 @@
       "sleep": 7,
       "water": 7,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 4,
@@ -52,9 +52,9 @@
       "sleep": 7,
       "water": 5,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": true,
+      "mood": "5"
     },
     {
       "id": 5,
@@ -66,9 +66,9 @@
       "sleep": 5,
       "water": 6,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": true,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 6,
@@ -80,9 +80,9 @@
       "sleep": 7,
       "water": 7,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 7,
@@ -94,9 +94,9 @@
       "sleep": 9,
       "water": 9,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 8,
@@ -108,9 +108,9 @@
       "sleep": 8,
       "water": 10,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": true,
+      "mood": "4"
     },
     {
       "id": 9,
@@ -122,9 +122,9 @@
       "sleep": 9,
       "water": 9,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 10,
@@ -136,9 +136,9 @@
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": true,
+      "mood": "5"
     },
     {
       "id": 11,
@@ -150,9 +150,9 @@
       "sleep": 7,
       "water": 10,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 12,
@@ -164,9 +164,9 @@
       "sleep": 9,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 13,
@@ -178,9 +178,9 @@
       "sleep": 7,
       "water": 6,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 14,
@@ -192,9 +192,9 @@
       "sleep": 6,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 15,
@@ -206,9 +206,9 @@
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 16,
@@ -220,9 +220,9 @@
       "sleep": 9,
       "water": 8,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 17,
@@ -234,9 +234,9 @@
       "sleep": 5,
       "water": 10,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "2"
+      "exercise": false,
+      "meditation": false,
+      "mood": "2"
     },
     {
       "id": 18,
@@ -248,9 +248,9 @@
       "sleep": 10,
       "water": 8,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 19,
@@ -262,9 +262,9 @@
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 20,
@@ -276,9 +276,9 @@
       "sleep": 10,
       "water": 8,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": true,
+      "mood": "5"
     },
     {
       "id": 21,
@@ -290,9 +290,9 @@
       "sleep": 8,
       "water": 9,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 22,
@@ -304,9 +304,9 @@
       "sleep": 7,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 23,
@@ -318,9 +318,9 @@
       "sleep": 6,
       "water": 9,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 24,
@@ -332,9 +332,9 @@
       "sleep": 6,
       "water": 10,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 25,
@@ -346,9 +346,9 @@
       "sleep": 8,
       "water": 10,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 26,
@@ -360,9 +360,9 @@
       "sleep": 7,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 27,
@@ -374,9 +374,9 @@
       "sleep": 6,
       "water": 7,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 28,
@@ -388,9 +388,9 @@
       "sleep": 6,
       "water": 9,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "2"
+      "exercise": false,
+      "meditation": false,
+      "mood": "2"
     },
     {
       "id": 29,
@@ -402,9 +402,9 @@
       "sleep": 7,
       "water": 10,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 30,
@@ -416,9 +416,9 @@
       "sleep": 9,
       "water": 7,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "true",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": true,
+      "mood": "4"
     }
         ]   
 }
