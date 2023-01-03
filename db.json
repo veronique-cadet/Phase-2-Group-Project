@@ -3,422 +3,422 @@
     {
       "id": 1,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 1,
         "year": 2022
       },
       "sleep": 7,
       "water": 5,
       "meals": 3,
-      "Exercise": true,
-      "Meditation": false,
-      "Mood": "3"
-    },
+      "exercise": true,
+      "meditation": false,
+      "mood": "3"
+    }, 
     {
       "id": 2,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 2,
         "year": 2022
       },
       "sleep": 6,
       "water": 8,
       "meals": 3,
-      "Exercise": false,
-      "Meditation": false,
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 3,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 3,
         "year": 2022
       },
       "sleep": 7,
       "water": 7,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 4,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 4,
         "year": 2022
       },
       "sleep": 7,
       "water": 5,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": true,
+      "mood": "5"
     },
     {
       "id": 5,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 5,
         "year": 2022
       },
       "sleep": 5,
       "water": 6,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": true,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 6,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 6,
         "year": 2022
       },
       "sleep": 7,
       "water": 7,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 7,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 7,
         "year": 2022
       },
       "sleep": 9,
       "water": 9,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 8,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 8,
         "year": 2022
       },
       "sleep": 8,
       "water": 10,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": true,
+      "mood": "4"
     },
     {
       "id": 9,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 9,
         "year": 2022
       },
       "sleep": 9,
       "water": 9,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 10,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 10,
         "year": 2022
       },
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": true,
+      "mood": "5"
     },
     {
       "id": 11,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 11,
         "year": 2022
       },
       "sleep": 7,
       "water": 10,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 12,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 12,
         "year": 2022
       },
       "sleep": 9,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 13,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 13,
         "year": 2022
       },
       "sleep": 7,
       "water": 6,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 14,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 14,
         "year": 2022
       },
       "sleep": 6,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 15,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 15,
         "year": 2022
       },
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 16,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 16,
         "year": 2022
       },
       "sleep": 9,
       "water": 8,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 17,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 17,
         "year": 2022
       },
       "sleep": 5,
       "water": 10,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "2"
+      "exercise": false,
+      "meditation": false,
+      "mood": "2"
     },
     {
       "id": 18,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 18,
         "year": 2022
       },
       "sleep": 10,
       "water": 8,
       "meals": 2,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 19,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 19,
         "year": 2022
       },
       "sleep": 7,
       "water": 9,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 20,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 20,
         "year": 2022
       },
       "sleep": 10,
       "water": 8,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "true",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": true,
+      "mood": "5"
     },
     {
       "id": 21,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 21,
         "year": 2022
       },
       "sleep": 8,
       "water": 9,
       "meals": 3,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 22,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 22,
         "year": 2022
       },
       "sleep": 7,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 23,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 23,
         "year": 2022
       },
       "sleep": 6,
       "water": 9,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 24,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 24,
         "year": 2022
       },
       "sleep": 6,
       "water": 10,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 25,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 25,
         "year": 2022
       },
       "sleep": 8,
       "water": 10,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "5"
+      "exercise": true,
+      "meditation": false,
+      "mood": "5"
     },
     {
       "id": 26,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 26,
         "year": 2022
       },
       "sleep": 7,
       "water": 8,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 27,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 27,
         "year": 2022
       },
       "sleep": 6,
       "water": 7,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "3"
+      "exercise": false,
+      "meditation": false,
+      "mood": "3"
     },
     {
       "id": 28,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 28,
         "year": 2022
       },
       "sleep": 6,
       "water": 9,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "false",
-      "Mood": "2"
+      "exercise": false,
+      "meditation": false,
+      "mood": "2"
     },
     {
       "id": 29,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 21,
         "year": 2022
       },
       "sleep": 7,
       "water": 10,
       "meals": 3,
-      "Exercise": "true",
-      "Meditation": "false",
-      "Mood": "4"
+      "exercise": true,
+      "meditation": false,
+      "mood": "4"
     },
     {
       "id": 30,
       "date": {
-        "month": "December",
+        "month": "december",
         "day": 30,
         "year": 2022
       },
       "sleep": 9,
       "water": 7,
       "meals": 2,
-      "Exercise": "false",
-      "Meditation": "true",
-      "Mood": "4"
+      "exercise": false,
+      "meditation": true,
+      "mood": "4"
     }
   ]
 }
