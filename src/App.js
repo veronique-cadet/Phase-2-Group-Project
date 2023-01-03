@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -9,18 +10,19 @@ import GetZen from "./components/GetZen";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
+  const [home, setHome] = useState(true);
   return (
     <div>
-      <Header />
+      <Header home={home} />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home setHome={setHome} />
         </Route>
         <Route path="/log">
           <Log />
         </Route>
         <Route path="/stats">
-          <Stats />
+          <Stats setHome={setHome} />
         </Route>
         <Route path="/getzen">
           <GetZen />

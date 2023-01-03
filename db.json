@@ -11,9 +11,9 @@
       "water": 5,
       "meals": 3,
       "exercise": true,
-      "meditation": false,
+      "meditation": true,
       "mood": 3
-    }, 
+    },
     {
       "id": 2,
       "date": {
@@ -66,7 +66,7 @@
       "sleep": 5,
       "water": 6,
       "meals": 2,
-      "exercise": true,
+      "exercise": false,
       "meditation": false,
       "mood": "3"
     },

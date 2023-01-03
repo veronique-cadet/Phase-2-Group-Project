@@ -1,4 +1,5 @@
-const Home = () => {
+const Home = ({ setHome }) => {
+  setHome(true);
   return (
     <div>
       <video id="video" muted autoPlay={"autoplay"} preLoad="auto" loop>
