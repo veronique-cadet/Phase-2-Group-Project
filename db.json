@@ -3,7 +3,7 @@
     {
       "id": 1,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 1,
         "year": 2022
       },
@@ -12,12 +12,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     }, 
     {
       "id": 2,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 2,
         "year": 2022
       },
@@ -26,12 +26,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 3,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 3,
         "year": 2022
       },
@@ -40,12 +40,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 4,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 4,
         "year": 2022
       },
@@ -54,12 +54,12 @@
       "meals": 2,
       "exercise": true,
       "meditation": true,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 5,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 5,
         "year": 2022
       },
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 6,
         "year": 2022
       },
@@ -82,12 +82,12 @@
       "meals": 2,
       "exercise": true,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 7,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 7,
         "year": 2022
       },
@@ -96,12 +96,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 8,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 8,
         "year": 2022
       },
@@ -110,12 +110,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": true,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 9,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 9,
         "year": 2022
       },
@@ -124,12 +124,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 10,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 10,
         "year": 2022
       },
@@ -138,12 +138,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": true,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 11,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 11,
         "year": 2022
       },
@@ -152,12 +152,12 @@
       "meals": 3,
       "exercise": false,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 12,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 12,
         "year": 2022
       },
@@ -166,12 +166,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 13,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 13,
         "year": 2022
       },
@@ -180,12 +180,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 14,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 14,
         "year": 2022
       },
@@ -194,12 +194,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     },
     {
       "id": 15,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 15,
         "year": 2022
       },
@@ -208,12 +208,12 @@
       "meals": 3,
       "exercise": false,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 16,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 16,
         "year": 2022
       },
@@ -222,12 +222,12 @@
       "meals": 2,
       "exercise": true,
       "meditation": false,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 17,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 17,
         "year": 2022
       },
@@ -236,12 +236,12 @@
       "meals": 3,
       "exercise": false,
       "meditation": false,
-      "mood": "2"
+      "mood": 2
     },
     {
       "id": 18,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 18,
         "year": 2022
       },
@@ -250,12 +250,12 @@
       "meals": 2,
       "exercise": true,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 19,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 19,
         "year": 2022
       },
@@ -264,12 +264,12 @@
       "meals": 3,
       "exercise": false,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     },
     {
       "id": 20,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 20,
         "year": 2022
       },
@@ -278,12 +278,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": true,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 21,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 21,
         "year": 2022
       },
@@ -292,12 +292,12 @@
       "meals": 3,
       "exercise": false,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 22,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 22,
         "year": 2022
       },
@@ -306,12 +306,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     },
     {
       "id": 23,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 23,
         "year": 2022
       },
@@ -320,12 +320,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     },
     {
       "id": 24,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 24,
         "year": 2022
       },
@@ -334,12 +334,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     },
     {
       "id": 25,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 25,
         "year": 2022
       },
@@ -348,12 +348,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "5"
+      "mood": 5
     },
     {
       "id": 26,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 26,
         "year": 2022
       },
@@ -362,12 +362,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 27,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 27,
         "year": 2022
       },
@@ -376,12 +376,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "3"
+      "mood": 3
     },
     {
       "id": 28,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 28,
         "year": 2022
       },
@@ -390,12 +390,12 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "2"
+      "mood": 2
     },
     {
       "id": 29,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 21,
         "year": 2022
       },
@@ -404,12 +404,12 @@
       "meals": 3,
       "exercise": true,
       "meditation": false,
-      "mood": "4"
+      "mood": 4
     },
     {
       "id": 30,
       "date": {
-        "month": "december",
+        "month": "December",
         "day": 30,
         "year": 2022
       },
@@ -418,7 +418,7 @@
       "meals": 2,
       "exercise": false,
       "meditation": true,
-      "mood": "4"
+      "mood": 4
     }
   ]
 }
