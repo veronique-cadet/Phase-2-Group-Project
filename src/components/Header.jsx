@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ home }) {
+  // const [changeNav, setChangeNav] = useState(
+  //   window.location.href === "http://localhost:3000/"
+  // );
   return (
-    <div className="header-div">
+    <div className={home ? "header-div" : "header-div-sub"}>
       <div className="nav-div">
         <Link to="/">
           <h1 className="header-title">Lotus</h1>

@@ -2,8 +2,9 @@ import DailyStats from "./DailyStats";
 import WeeklyStats from "./WeeklyStats";
 import { useEffect, useState } from "react";
 
-const Stats = () => {
+const Stats = ({ setHome }) => {
   const [logs, setLogs] = useState([]);
+  setHome(false);
 
   useEffect(() => {
     fetch("http://localhost:3005/logs")
