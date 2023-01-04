@@ -6,7 +6,7 @@ const Stats = ({ setHome, logs, setLogs }) => {
   setHome(false);
 
   useEffect(() => {
-    fetch("http://localhost:3005/logs")
+    fetch("http://localhost:3001/logs")
       .then((response) => response.json())
       .then((data) => setLogs(data));
   }, []);
@@ -22,7 +22,7 @@ const Stats = ({ setHome, logs, setLogs }) => {
         {dailyLogs}
       </div>
       <h1 className="daily-title">Weekly Stats</h1>
-      {/* <WeeklyStats logs={logs} /> */}
+      <WeeklyStats logs={logs} />
     </div>
   );
 };

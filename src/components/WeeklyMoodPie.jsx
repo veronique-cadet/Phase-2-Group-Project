@@ -1,7 +1,4 @@
 import { PieChart, Pie, Cell } from "recharts";
-import WeeklySleepGraph from "./WeeklySleepGraph";
-
-
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
 
@@ -27,10 +24,10 @@ const renderCustomizedLabel = ({
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
-      <tspan dy="1em">{name}</tspan>
-      <tspan dy="1em">
-        {`${(percent * 100).toFixed(0)}%`}
-      </tspan>
+      <>
+      {name}
+      {`${(percent * 100).toFixed(0)}%`}
+        </>
     </text>
   );
 };
@@ -53,11 +50,11 @@ export default function WeeklyMoodPie ({logs}) {
   const moodCountByMood = getMoodCountByMood(logs.slice(-7))
   // console.log(moodCountByMood)
   const data = [
-    { name: "Group A", value: moodCountByMood[1] },
-    { name: "Group B", value: moodCountByMood[2] },
-    { name: "Group C", value: moodCountByMood[3] },
-    { name: "Group D", value: moodCountByMood[4] }, 
-    { name: "Group E", value: moodCountByMood[5] }, 
+    { name: " Rated 1 ", value: moodCountByMood[1] },
+    { name: " Rated 2", value: moodCountByMood[2] },
+    { name: " Rated 3", value: moodCountByMood[3] },
+    { name: " Rated 4", value: moodCountByMood[4] }, 
+    { name: " Rated 5", value: moodCountByMood[5] }, 
   ];
 
   return (
