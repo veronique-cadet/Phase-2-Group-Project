@@ -2,13 +2,19 @@ import rangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
 import { useState } from "react";
 
-const Log = () => {
+const Log = ({ logs, setLogs }) => {
+  let currentDate = new Date().toJSON().slice(0, 10);
+  // let newMonth = currentDate.getMonth() + 1;
+  // let newYear = currentDate.getFullYear();
+  // let newDay = currentDate.getDate();
+
   const [sleep, setSleep] = useState(0);
   const [water, setWater] = useState(0);
   const [food, setFood] = useState(0);
   const [exercise, setExercise] = useState(false);
   const [meditation, setMeditation] = useState(false);
-
+  const [mood, setMood] = useState(1);
+  const [date, setDate] = useState(currentDate);
 
   const getBackgroundSizeSleep = () => {
     return { backgroundSize: `${(sleep * 100) / 12}% 100%` };
@@ -19,14 +25,52 @@ const Log = () => {
   const getBackgroundSizeFood = () => {
     return { backgroundSize: `${(food * 100) / 7}% 100%` };
   };
+
+  const newSubmit = {
+    date: {
+      month: date,
+      day: date,
+      year: date,
+    },
+    sleep: sleep,
+    water: water,
+    meals: food,
+    exercise: exercise,
+    meditation: meditation,
+    mood: mood,
+  };
+
+  const handleSubmit = () => {
+    fetch("http://localhost:3005/logs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newSubmit),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setLogs([...logs, newSubmit]);
+      });
+  };
   return (
     <div className="other-pages">
       {/* <h2 className="quote">
         “Everything you can imagine is real.”―Pablo Picasso
       </h2> */}
-      <form className="form">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+        className="form"
+      >
         <p className="form-title">Log</p>
-        <input type="date"></input>
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+        ></input>
         <div className="slider">
           <label className="form-text" for="sleep">
             Sleep
@@ -93,9 +137,18 @@ const Log = () => {
           <label id="mood" className="form-text" for="mood">
             Mood
           </label>
-          <input type="text" />
+          <input
+            className="mood"
+            type="number"
+            min={1}
+            max={5}
+            value={mood}
+            onChange={(e) => setMood(e.target.valueAsNumber)}
+          />
         </div>
-        <button id="form-submit">Submit</button>
+        <button onClick={() => handleSubmit()} id="form-submit">
+          Submit
+        </button>
       </form>
     </div>
   );
