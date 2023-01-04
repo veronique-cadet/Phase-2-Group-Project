@@ -7,7 +7,7 @@ import { PieChart, Pie, Cell } from "recharts";
 
 
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -17,8 +17,9 @@ const renderCustomizedLabel = ({
   innerRadius,
   outerRadius,
   percent,
-  index
-}: any) => {
+  ...props
+}) => {
+  console.log(props)
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -31,33 +32,51 @@ const renderCustomizedLabel = ({
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
-      {`${(percent * 100).toFixed(0)}%`}
+      <tspan dy="1em">{props.name}</tspan>
+      <tspan dy="1em">
+        {`${(percent * 100).toFixed(0)}%`}
+      </tspan>
     </text>
   );
 };
-export default function WeeklyStats ({logs}) {
-const data = [
-  { name: "Group A", value: logs.filter((log)=>{
-    if (log.mood === 5){
-      return true;
+// looping array to find number of mood counts
+const getMoodCountByMood = (logs) => {
+  const moodCountByMood = {}
+  logs.forEach((log) => {
+    // console.log(moodCountByMood[log.mood])
+    if (moodCountByMood[log.mood]) {
+      moodCountByMood[log.mood]++
+    } else {
+      moodCountByMood[log.mood] = 1
     }
-  }) },
-  { name: "Group B", value: logs.mood.count(4) },
-  { name: "Group C", value: logs.mood.count(3) },
-  { name: "Group D", value: logs.mood.count(2) }, 
-];
+  })
+  return moodCountByMood
+}
+
+export default function WeeklyStats ({logs}) {
+  // latest weekly data
+  const moodCountByMood = getMoodCountByMood(logs.slice(-7))
+  // console.log(moodCountByMood)
+  const data = [
+    { name: "Group A", value: moodCountByMood[1] },
+    { name: "Group B", value: moodCountByMood[2] },
+    { name: "Group C", value: moodCountByMood[3] },
+    { name: "Group D", value: moodCountByMood[4] }, 
+    { name: "Group E", value: moodCountByMood[5] }, 
+  ];
 
   return (
-    <PieChart width={400} height={400}>
+    <PieChart width={610} height={600}>
       <Pie
         data={data}
-        cx={200}
-        cy={200}
+        cx={300}
+        cy={300}
         labelLine={false}
         label={renderCustomizedLabel}
-        outerRadius={80}
+        outerRadius={300}
         fill="#8884d8"
         dataKey="value"
+        strokeWidth={0}
       >
         {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
