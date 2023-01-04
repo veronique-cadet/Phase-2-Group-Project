@@ -85,7 +85,7 @@ const Log = ({ logs, setLogs }) => {
           onChange={(e) => setDate(e.target.value)}
         ></input> */}
         <div className="slider">
-          <label className="form-text" for="sleep">
+          <label className="form-text" htmlFor="sleep">
             Sleep
           </label>
           <input
@@ -99,7 +99,7 @@ const Log = ({ logs, setLogs }) => {
           <p className="range-value">{sleep} hours</p>
         </div>
         <div className="slider">
-          <label className="form-text" for="water">
+          <label className="form-text" htmlFor="water">
             Water
           </label>
           <input
@@ -113,7 +113,7 @@ const Log = ({ logs, setLogs }) => {
           <p className="range-value">{water} cups</p>
         </div>
         <div className="slider">
-          <label className="form-text" for="food">
+          <label className="form-text" htmlFor="food">
             Food&nbsp;
           </label>
           <input
@@ -127,7 +127,7 @@ const Log = ({ logs, setLogs }) => {
           <p className="range-value">{food} meals</p>
         </div>
         <div className="checkbox-div">
-          <label id="exercise" className="form-text" for="exercise">
+          <label id="exercise" className="form-text" htmlFor="exercise">
             Exercise
           </label>
           <input
@@ -136,7 +136,7 @@ const Log = ({ logs, setLogs }) => {
             value={exercise}
             onChange={(e) => setExercise(e.target.checked)}
           />
-          <label id="meditation" className="form-text" for="meditation">
+          <label id="meditation" className="form-text" htmlFor="meditation">
             Meditation
           </label>
           <input
@@ -147,7 +147,7 @@ const Log = ({ logs, setLogs }) => {
           />
         </div>
         <div className="mood-div">
-          <label id="mood" className="form-text" for="mood">
+          <label id="mood" className="form-text" htmlFor="mood">
             Mood
           </label>
           <img
