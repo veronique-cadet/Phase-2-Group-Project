@@ -1,30 +1,41 @@
-import DailyStats from "./DailyStats";
-import WeeklyStats from "./WeeklyStats";
+import SelectTimeBar from "./SelectTimeBar";
 import { useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
+
+import DailyComponent from "./DailyComponent";
+import WeeklyComponent from "./WeeklyComponent";
 
 const Stats = ({ setHome, logs, setLogs }) => {
+
+  
   setHome(false);
 
   useEffect(() => {
     fetch("http://localhost:3005/logs")
       .then((response) => response.json())
-      .then((data) => setLogs(data));
+      .then((data) => {
+        console.log(data);
+        setLogs(data)
+      }
+      );
   }, []);
-
-  const dailyLogs = logs.map((log) => {
-    return <DailyStats log={log} key={log.id} date={log.date} />;
-  });
 
   return (
     <div className="other-pages">
-      <div className="daily-container">
-        <h1 className="daily-title">Daily Stats</h1>
-        {dailyLogs}
+      <div>
+          <SelectTimeBar />
       </div>
-      <h1 className="daily-title">Weekly Stats</h1>
-      <WeeklyStats logs={logs} />
+        <Switch>
+        <Route path="/stats/daily-stats">
+          <DailyComponent logs={logs}/>
+        </Route>
+        <Route path="/stats/weekly-stats">
+          <WeeklyComponent logs={logs}/>
+      </Route>
+      </Switch>
     </div>
-  );
+  )
+
 };
 
 export default Stats;
