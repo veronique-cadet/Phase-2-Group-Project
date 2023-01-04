@@ -27,7 +27,7 @@ const renderCustomizedLabel = ({
       <>
       {name}
       {`${(percent * 100).toFixed(0)}%`}
-        </>
+      </>
     </text>
   );
 };
