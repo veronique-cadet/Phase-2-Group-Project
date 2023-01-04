@@ -1,6 +1,5 @@
-
-import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
+import WeeklySleepGraph from "./WeeklySleepGraph";
 
 
 
@@ -49,7 +48,7 @@ const getMoodCountByMood = (logs) => {
   return moodCountByMood
 }
 
-export default function WeeklyStats ({logs}) {
+export default function WeeklyMoodPie ({logs}) {
   // latest weekly data
   const moodCountByMood = getMoodCountByMood(logs.slice(-7))
   // console.log(moodCountByMood)
@@ -81,18 +80,3 @@ export default function WeeklyStats ({logs}) {
     </PieChart>
   );
 }
-
-
-
-// const WeeklyStats = ({logs}) => {
-
-
-//   return (
-//     <div>
-//       {/* <h2>YOUR WEEKLY STATS</h2>
-//             <h3>Data from db.json will appear here on graphs and charts</h3> */}
-//     </div>
-//   );
-// };
-
-// export default WeeklyStats;
