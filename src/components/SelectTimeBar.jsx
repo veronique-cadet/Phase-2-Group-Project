@@ -11,6 +11,9 @@ const SelectTimeBar = ()=>{
         <Link to="/stats/weekly-stats">
           WEEKLY      
         </Link>
+        <Link to="/stats/monthly-stats">
+          MONTHLY
+        </Link>
       </h2>
     </div>
   )

@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import DailyComponent from "./DailyComponent";
 import WeeklyComponent from "./WeeklyComponent";
+import MonthlyComponent from "./MonthlyComponent";
 
 const Stats = ({ setHome, logs, setLogs }) => {
 
@@ -11,7 +12,7 @@ const Stats = ({ setHome, logs, setLogs }) => {
   setHome(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/logs")
+    fetch("http://localhost:3005/logs")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -31,6 +32,9 @@ const Stats = ({ setHome, logs, setLogs }) => {
         </Route>
         <Route path="/stats/weekly-stats">
           <WeeklyComponent logs={logs}/>
+      </Route>
+      <Route path="/stats/monthly-stats">
+          <MonthlyComponent logs={logs}/>
       </Route>
       </Switch>
     </div>
