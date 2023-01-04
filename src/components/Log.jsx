@@ -1,12 +1,13 @@
 import rangeSlider from "react-range-slider-input";
+import moment from "moment";
 import "react-range-slider-input/dist/style.css";
 import { useState } from "react";
 
 const Log = ({ logs, setLogs }) => {
-  let currentDate = new Date().toJSON().slice(0, 10);
-  // let newMonth = currentDate.getMonth() + 1;
-  // let newYear = currentDate.getFullYear();
-  // let newDay = currentDate.getDate();
+  let currentDate = moment().format("MMMM Do, YYYY");
+  let newMonth = moment().format("MMMM");
+  let newYear = moment().format("YYYY");
+  let newDay = moment().format("D");
 
   const [sleep, setSleep] = useState(0);
   const [water, setWater] = useState(0);
@@ -27,11 +28,15 @@ const Log = ({ logs, setLogs }) => {
     return { backgroundSize: `${(food * 100) / 7}% 100%` };
   };
 
+  // const loadValues = () => {
+  //   localStorage.getItem(u);
+  // };
+
   const newSubmit = {
     date: {
-      month: date,
-      day: date,
-      year: date,
+      month: newMonth,
+      day: parseInt(newDay),
+      year: parseInt(newYear),
     },
     sleep: sleep,
     water: water,
@@ -50,10 +55,15 @@ const Log = ({ logs, setLogs }) => {
       body: JSON.stringify(newSubmit),
     })
       .then((response) => response.json())
-      .then((data) => {
+      .then(() => {
         setLogs([...logs, newSubmit]);
       });
   };
+
+  // const udpateValue = () => {
+  //   localStorage.setItem(sleep);
+  // };
+
   return (
     <div id="form">
       {/* <h2 className="quote">
@@ -67,12 +77,13 @@ const Log = ({ logs, setLogs }) => {
         className="form"
       >
         <p className="form-title">Log for the day!</p>
-        <input
+        <label className="form-text">{date}</label>
+        {/* <input
           type="date"
           value={date}
           className="date"
           onChange={(e) => setDate(e.target.value)}
-        ></input>
+        ></input> */}
         <div className="slider">
           <label className="form-text" htmlFor="sleep">
             Sleep
@@ -139,13 +150,46 @@ const Log = ({ logs, setLogs }) => {
           <label id="mood" className="form-text" htmlFor="mood">
             Mood
           </label>
-          <input
+          <img
             className="mood"
-            type="number"
-            min={1}
-            max={5}
-            value={mood}
-            onChange={(e) => setMood(e.target.valueAsNumber)}
+            type="image"
+            src="/assets/one.png"
+            onClick={(e) => {
+              setMood(1);
+            }}
+          />
+          <img
+            className="mood"
+            type="image"
+            src="/assets/two.png"
+            onClick={(e) => {
+              setMood(2);
+            }}
+          />
+          <img
+            className="mood"
+            type="image"
+            src="/assets/three.png"
+            onClick={(e) => {
+              setMood(3);
+              console.log(mood);
+            }}
+          />
+          <img
+            className="mood"
+            type="image"
+            src="/assets/four.png"
+            onClick={(e) => {
+              setMood(4);
+            }}
+          />
+          <img
+            className="mood"
+            type="image"
+            src="/assets/five.png"
+            onClick={(e) => {
+              setMood(5);
+            }}
           />
         </div>
         {isClicked ? (
