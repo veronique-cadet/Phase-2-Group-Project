@@ -113,10 +113,6 @@ nav a.active {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border: 1px #cde2ff solid;
   border-radius: 50px;
   background-color: #cde2ff;
@@ -124,44 +120,71 @@ nav a.active {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
-  padding: 2rem 3rem;
-  margin-top: 6rem;
+  padding: 2rem 10rem;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .form-title {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin-top: 1rem;
   text-align: center;
 }
 
 .form-text {
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
-  margin-top: 0.5rem;
 }
 
 .checkbox-div {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.checkbox-div label {
 }
 
 #meditation {
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 0.55rem;
+}
+
+#exercise {
+  margin-right: 0.55rem;
+}
+
+.checked-text {
+  margin-right: 0.5rem;
 }
 
 #mood {
   margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 #range {
-  width: 250px;
+  -webkit-appearance: none;
+  width: 300px;
+  height: 1em;
+  border-radius: 5px;
+  margin-left: 1rem;
+  background-image: linear-gradient(#f9dbeb, #f9dbeb);
+  background-repeat: no-repeat;
+}
+
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #f9dbeb;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #form-submit {
@@ -174,6 +197,8 @@ nav a.active {
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   color: rgb(255, 255, 255);
   font-size: 15px;
+  height: 30px;
+  width: 100px;
 }
 
 .quote {
@@ -211,4 +236,29 @@ nav a.active {
   font-weight: 500;
   margin-bottom: 3rem;
   margin-top: 1rem;
+}
+
+.slider {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.range-value {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.mood-div {
+  margin-top: 2rem;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  -webkit-user-select: none;
 }

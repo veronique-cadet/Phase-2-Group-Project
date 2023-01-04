@@ -7,7 +7,7 @@ const Stats = ({ setHome }) => {
   setHome(false);
 
   useEffect(() => {
-    fetch("http://localhost:3005/logs")
+    fetch("http://localhost:3000/logs")
       .then((response) => response.json())
       .then((data) => setLogs(data));
   }, []);
@@ -16,13 +16,16 @@ const Stats = ({ setHome }) => {
     return <DailyStats log={log} key={log.id} date={log.date} />;
   });
 
+
+
   return (
     <div className="other-pages">
       <div className="daily-container">
         <h1 className="daily-title">Daily Stats</h1>
         {dailyLogs}
       </div>
-      <WeeklyStats />
+    <h1 className="daily-title">Weekly Stats</h1>
+    <WeeklyStats logs={logs}/>
     </div>
   );
 };
