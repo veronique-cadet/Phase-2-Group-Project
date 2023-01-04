@@ -17,9 +17,9 @@ const renderCustomizedLabel = ({
   innerRadius,
   outerRadius,
   percent,
-  ...props
+  name
+  // Add Name here
 }) => {
-  console.log(props)
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -32,7 +32,7 @@ const renderCustomizedLabel = ({
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
-      <tspan dy="1em">{props.name}</tspan>
+      <tspan dy="1em">{name}</tspan>
       <tspan dy="1em">
         {`${(percent * 100).toFixed(0)}%`}
       </tspan>

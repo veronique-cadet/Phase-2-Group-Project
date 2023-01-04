@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Stats = ({ setHome }) => {
   const [logs, setLogs] = useState([]);
-  setHome(false);
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/logs")
