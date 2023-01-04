@@ -9,7 +9,6 @@ const getSleepCountBySleep = (logs) => {
             sleepCountBySleep[log.sleep] = 1
         }
     })
-    console.log(sleepCountBySleep)
     return sleepCountBySleep
 }
 

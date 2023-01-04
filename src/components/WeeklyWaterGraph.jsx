@@ -9,7 +9,6 @@ const getWaterCountByWater = (logs) => {
             waterCountByWater[log.water] = 1
         }
     })
-    console.log(waterCountByWater)
     return waterCountByWater
 }
 

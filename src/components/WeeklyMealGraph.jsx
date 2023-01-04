@@ -1,13 +1,3 @@
-// const WeeklyMealGraph = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     )
-// }
-
-// export default WeeklyMealGraph;
-
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const getMealCountByMeal = (logs) => {
@@ -19,7 +9,6 @@ const getMealCountByMeal = (logs) => {
             mealCountByMeal[log.meals] = 1
         }
     })
-    console.log(mealCountByMeal)
     return mealCountByMeal
 }
 
