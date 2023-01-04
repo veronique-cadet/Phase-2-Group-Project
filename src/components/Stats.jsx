@@ -2,8 +2,7 @@ import DailyStats from "./DailyStats";
 import WeeklyStats from "./WeeklyStats";
 import { useEffect, useState } from "react";
 
-const Stats = ({ setHome }) => {
-  const [logs, setLogs] = useState([]);
+const Stats = ({ setHome, logs, setLogs }) => {
   setHome(false);
 
   useEffect(() => {
@@ -22,7 +21,8 @@ const Stats = ({ setHome }) => {
         <h1 className="daily-title">Daily Stats</h1>
         {dailyLogs}
       </div>
-      <WeeklyStats />
+      <h1 className="daily-title">Weekly Stats</h1>
+      {/* <WeeklyStats logs={logs} /> */}
     </div>
   );
 };

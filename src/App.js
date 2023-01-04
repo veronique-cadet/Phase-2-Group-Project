@@ -11,6 +11,7 @@ import { Switch, Route } from "react-router-dom";
 
 function App() {
   const [home, setHome] = useState(true);
+  const [logs, setLogs] = useState([]);
   return (
     <div>
       <Header home={home} />
@@ -19,10 +20,10 @@ function App() {
           <Home setHome={setHome} />
         </Route>
         <Route path="/log">
-          <Log />
+          <Log setHome={setHome} logs={logs} setLogs={setLogs} />
         </Route>
         <Route path="/stats">
-          <Stats setHome={setHome} />
+          <Stats setHome={setHome} logs={logs} setLogs={setLogs} />
         </Route>
         <Route path="/getzen">
           <GetZen />
