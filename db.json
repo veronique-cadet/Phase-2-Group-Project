@@ -419,20 +419,6 @@
       "exercise": false,
       "meditation": true,
       "mood": 2
-    },
-    {
-      "date": {
-        "month": "2023-01-04",
-        "day": "2023-01-04",
-        "year": "2023-01-04"
-      },
-      "sleep": 9,
-      "water": 11,
-      "meals": 5,
-      "exercise": true,
-      "meditation": false,
-      "mood": 4,
-      "id": 31
     }
   ]
 }
