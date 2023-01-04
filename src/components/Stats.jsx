@@ -22,7 +22,7 @@ const Stats = ({ setHome, logs, setLogs }) => {
         {dailyLogs}
       </div>
       <h1 className="daily-title">Weekly Stats</h1>
-      {/* <WeeklyStats logs={logs} /> */}
+      <WeeklyStats logs={logs} />
     </div>
   );
 };

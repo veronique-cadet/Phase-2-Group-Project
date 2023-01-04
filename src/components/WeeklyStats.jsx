@@ -5,8 +5,6 @@
 import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
-
-
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
 
 const RADIAN = Math.PI / 180;
@@ -17,7 +15,7 @@ const renderCustomizedLabel = ({
   innerRadius,
   outerRadius,
   percent,
-  name //add name text to label
+  name, //add name text to label
 }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -32,36 +30,34 @@ const renderCustomizedLabel = ({
       dominantBaseline="central"
     >
       <tspan dy="1em">{name}</tspan>
-      <tspan dy="1em">
-        {`${(percent * 100).toFixed(0)}%`}
-      </tspan>
+      <tspan dy="1em">{`${(percent * 100).toFixed(0)}%`}</tspan>
     </text>
   );
 };
 // looping array to find number of mood counts
 const getMoodCountByMood = (logs) => {
-  const moodCountByMood = {}
+  const moodCountByMood = {};
   logs.forEach((log) => {
     // console.log(moodCountByMood[log.mood])
     if (moodCountByMood[log.mood]) {
-      moodCountByMood[log.mood]++
+      moodCountByMood[log.mood]++;
     } else {
-      moodCountByMood[log.mood] = 1
+      moodCountByMood[log.mood] = 1;
     }
-  })
-  return moodCountByMood
-}
+  });
+  return moodCountByMood;
+};
 
-export default function WeeklyStats ({logs}) {
+export default function WeeklyStats({ logs }) {
   // latest weekly data
-  const moodCountByMood = getMoodCountByMood(logs.slice(-7))
+  const moodCountByMood = getMoodCountByMood(logs.slice(-7));
   // console.log(moodCountByMood)
   const data = [
     { name: "Group A", value: moodCountByMood[1] },
     { name: "Group B", value: moodCountByMood[2] },
     { name: "Group C", value: moodCountByMood[3] },
-    { name: "Group D", value: moodCountByMood[4] }, 
-    { name: "Group E", value: moodCountByMood[5] }, 
+    { name: "Group D", value: moodCountByMood[4] },
+    { name: "Group E", value: moodCountByMood[5] },
   ];
 
   return (
@@ -85,10 +81,7 @@ export default function WeeklyStats ({logs}) {
   );
 }
 
-
-
 // const WeeklyStats = ({logs}) => {
-
 
 //   return (
 //     <div>

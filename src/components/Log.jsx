@@ -15,6 +15,7 @@ const Log = ({ logs, setLogs }) => {
   const [meditation, setMeditation] = useState(false);
   const [mood, setMood] = useState(1);
   const [date, setDate] = useState(currentDate);
+  const [isClicked, setIsClicked] = useState(true);
 
   const getBackgroundSizeSleep = () => {
     return { backgroundSize: `${(sleep * 100) / 12}% 100%` };
@@ -54,7 +55,7 @@ const Log = ({ logs, setLogs }) => {
       });
   };
   return (
-    <div className="other-pages">
+    <div id="form">
       {/* <h2 className="quote">
         “Everything you can imagine is real.”―Pablo Picasso
       </h2> */}
@@ -65,10 +66,11 @@ const Log = ({ logs, setLogs }) => {
         }}
         className="form"
       >
-        <p className="form-title">Log</p>
+        <p className="form-title">Log for the day!</p>
         <input
           type="date"
           value={date}
+          className="date"
           onChange={(e) => setDate(e.target.value)}
         ></input>
         <div className="slider">
@@ -146,9 +148,15 @@ const Log = ({ logs, setLogs }) => {
             onChange={(e) => setMood(e.target.valueAsNumber)}
           />
         </div>
-        <button onClick={() => handleSubmit()} id="form-submit">
-          Submit
-        </button>
+        {isClicked ? (
+          <button onClick={() => setIsClicked(!isClicked)} id="form-submit">
+            Submit Log
+          </button>
+        ) : (
+          <button onClick={() => setIsClicked(!isClicked)} id="form-submit-two">
+            Edit Log
+          </button>
+        )}
       </form>
     </div>
   );

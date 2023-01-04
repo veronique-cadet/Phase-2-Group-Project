@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Log from "./components/Log";
