@@ -15,10 +15,10 @@ const getSleepCountBySleep = (logs) => {
   
   export default function WeeklySleepGraph({logs}) {
       
-      const waterWeekCountByWater = getSleepCountBySleep(logs.slice(-7))
+      const sleepWeekCountBySleep = getSleepCountBySleep(logs.slice(-30))
 
       //for total count if necessary
-      const waterTotalCountByWater = getSleepCountBySleep(logs)
+      const sleepTotalCountBySleep = getSleepCountBySleep(logs)
       
       const data = [
         // {
@@ -43,43 +43,43 @@ const getSleepCountBySleep = (logs) => {
         // },
         {
           name: " <= 5 hours",
-          hours: waterWeekCountByWater[1,2,3,4,5],
-          amt: waterTotalCountByWater [1,2,3,4,5]
+          hours: sleepWeekCountBySleep[1,2,3,4,5],
+          amt: sleepTotalCountBySleep [1,2,3,4,5]
         },
         {
           name: "6 hours",
-          hours: waterWeekCountByWater[6],
-          amt: waterTotalCountByWater [6]
+          hours: sleepWeekCountBySleep[6],
+          amt: sleepTotalCountBySleep [6]
         },
         {
           name: "7 hours ",
-          hours: waterWeekCountByWater[7],
-          amt: waterTotalCountByWater [7]
+          hours: sleepWeekCountBySleep[7],
+          amt: sleepTotalCountBySleep [7]
         },
         {
           name: "8 hours",
-          hours: waterWeekCountByWater[8],
-          amt: waterTotalCountByWater[8]
+          hours: sleepWeekCountBySleep[8],
+          amt: sleepTotalCountBySleep[8]
         },
         {
           name: "9 hours ",
-          hours: waterWeekCountByWater[9],
-          amt: waterTotalCountByWater[9]
+          hours: sleepWeekCountBySleep[9],
+          amt: sleepTotalCountBySleep[9]
         },
         {
           name: "10 hours",
-          hours: waterWeekCountByWater[10],
-          amt: waterTotalCountByWater[10]
+          hours: sleepWeekCountBySleep[10],
+          amt: sleepTotalCountBySleep[10]
         },
         {
           name: "11 hours ",
-          hours: waterWeekCountByWater[11],
-          amt: waterTotalCountByWater[11]
+          hours: sleepWeekCountBySleep[11],
+          amt: sleepTotalCountBySleep[11]
         },
         {
-          name: "12 => hours",
-          hours: waterWeekCountByWater[12,13,14,15,16,17,18,19,20],
-          amt: waterTotalCountByWater[12,13,14,15,16,17,18,19,20]
+          name: "12 hours",
+          hours: sleepWeekCountBySleep[12],
+          amt: sleepTotalCountBySleep[12]
         }
       ];
   return (

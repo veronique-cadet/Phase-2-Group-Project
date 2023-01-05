@@ -12,7 +12,7 @@ const Stats = ({ setHome, logs, setLogs }) => {
   setHome(false);
 
   useEffect(() => {
-    fetch("http://localhost:3005/logs")
+    fetch("http://localhost:3001/logs")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

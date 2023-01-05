@@ -4,8 +4,6 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Log from "./components/Log";
 import Stats from "./components/Stats";
-import DailyStats from "./components/DailyStats";
-import WeeklyStats from "./components/WeeklyStats";
 import Header from "./components/Header";
 import GetZen from "./components/GetZen";
 import { Switch, Route } from "react-router-dom";

@@ -15,7 +15,7 @@ const getWaterCountByWater = (logs) => {
   
   export default function WeeklyWaterGraph({logs}) {
       
-      const waterWeekCountByWater = getWaterCountByWater(logs.slice(-7))
+      const waterWeekCountByWater = getWaterCountByWater(logs.slice(-30))
 
       //for total count if necessary
       const waterTotalCountByWater = getWaterCountByWater(logs)
@@ -78,8 +78,8 @@ const getWaterCountByWater = (logs) => {
         },
         {
           name: "12 => cups",
-          cups: waterWeekCountByWater[12,13,14,15,16,17,18,19,20],
-          amt: waterTotalCountByWater[12,13,14,15,16,17,18,19,20]
+          cups: waterWeekCountByWater[12,13,14,15,16],
+          amt: waterTotalCountByWater[12,13,14,15,16]
         }
       ];
   return (
