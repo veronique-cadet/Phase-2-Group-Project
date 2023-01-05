@@ -15,7 +15,6 @@ const Stats = ({ setHome, logs, setLogs }) => {
     fetch("http://localhost:3001/logs")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setLogs(data)
       }
       );
