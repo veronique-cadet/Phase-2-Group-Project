@@ -84,8 +84,8 @@ const getSleepCountBySleep = (logs) => {
       ];
   return (
     <BarChart
-      width={1300}
-      height={600}
+      width={900}
+      height={400}
       data={data}
       margin={{
         top: 5,
@@ -95,7 +95,7 @@ const getSleepCountBySleep = (logs) => {
       }}
     >
       <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
+      <YAxis label=""/>
       <Tooltip />
       <Legend />
       <Bar dataKey="hours" fill="##3a5ed0" />

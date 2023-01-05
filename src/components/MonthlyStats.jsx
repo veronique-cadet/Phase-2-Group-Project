@@ -12,7 +12,8 @@ const MonthlyStats = ({logs}) => {
   const [chosenMonthlyChart, setChosenMonthlyChart] = useState("default")
 
   return (
-    <div>
+    <div className="chart-container">
+      <h2 className="stat-title">YOUR MONTHLY DIGEST</h2>
         <div>
         <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlySleepGraph logs={logs}/>)}>SLEEP</button>
         <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlyMoodPie logs={logs}/>)}>MOOD</button>

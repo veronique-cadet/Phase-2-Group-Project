@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const COLORS = ["#bbe116", "#ff7678"];
 
@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({
       dominantBaseline="central"
     >
       <>
-      {name}
+      {/* {name} */}
       {`${(percent * 100).toFixed(0)}%`}
       </>
     </text>
@@ -51,18 +51,18 @@ export default function MonthlyMeditationPie ({logs}) {
   // console.log(meditationCountByMeditation)
   const data = [
     { name: " Meditated = ", value: meditationCountByMeditation[true] },
-    { name: " Not Meditated = ", value: meditationCountByMeditation[false] }
+    { name: " Did Not Meditate ", value: meditationCountByMeditation[false] }
   ];
 
   return (
-    <PieChart width={610} height={610}>
+    <PieChart width={400} height={400}>
       <Pie
         data={data}
-        cx={300}
-        cy={300}
+        cx={150}
+        cy={150}
         labelLine={false}
         label={renderCustomizedLabel}
-        outerRadius={300}
+        outerRadius={150}
         fill="#8884d8"
         dataKey="value"
         strokeWidth={0}
@@ -71,6 +71,7 @@ export default function MonthlyMeditationPie ({logs}) {
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
+      <Legend/>
     </PieChart>
   );
 }

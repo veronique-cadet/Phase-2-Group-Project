@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const COLORS = ["#0088FE", "#00C49F"];
 
@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({
       dominantBaseline="central"
     >
       <>
-      {name}
+      {/* {name} */}
       {`${(percent * 100).toFixed(0)}%`}
       </>
     </text>
@@ -50,19 +50,19 @@ export default function WeeklyExercisePie ({logs}) {
   const exerciseCountByExercise = getExerciseCountByExercise(logs.slice(-7))
   // console.log(exerciseCountByExercise)
   const data = [
-    { name: " Exercised = " , value: exerciseCountByExercise[true] },
-    { name: " Not Exercised = ", value: exerciseCountByExercise[false] }
+    { name: " Exercised " , value: exerciseCountByExercise[true] },
+    { name: " Did Not Exercise ", value: exerciseCountByExercise[false] }
   ];
 
   return (
-    <PieChart width={610} height={610}>
+    <PieChart width={400} height={400}>
       <Pie
         data={data}
-        cx={300}
-        cy={300}
+        cx={150}
+        cy={150}
         labelLine={false}
         label={renderCustomizedLabel}
-        outerRadius={300}
+        outerRadius={150}
         fill="#8884d8"
         dataKey="value"
         strokeWidth={0}
@@ -71,6 +71,7 @@ export default function WeeklyExercisePie ({logs}) {
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
+      <Legend align="left"/>
     </PieChart>
   );
 }

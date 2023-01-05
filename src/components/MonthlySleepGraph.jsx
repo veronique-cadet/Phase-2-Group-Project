@@ -84,8 +84,8 @@ const getSleepCountBySleep = (logs) => {
       ];
   return (
     <BarChart
-      width={1300}
-      height={600}
+      width={900}
+      height={300}
       data={data}
       margin={{
         top: 5,

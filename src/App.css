@@ -351,8 +351,8 @@ nav a.active {
 }
 
 .select-category {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-right: .5rem;
   margin-left: .5rem;
   background-color: #f9dbeb;
@@ -412,3 +412,47 @@ nav a.active {
 .time-item:active {
   background-color: #cde2ff;
 }
+
+.chart-container {
+  border: 1px #cde2ff solid;
+  border-radius: 50px;
+  background-color: #cde2ff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 1rem 6rem;
+  margin-top: 1rem;
+}
+
+.stat-title {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 1rem;
+  height: 30px;
+  margin-bottom: 0.5rem;
+  text-shadow: -1px 1px 0 #4580a8, 1px 1px 0 #6d6b6b, 1px -1px 0 #42afac,
+    -1px -1px 0 #c6c23f;
+}
+
+.recharts-wrapper {
+ display: block;
+ margin: 0 auto;
+}
+
+.recharts-surface {
+  display: block;
+  margin-left: 43px;
+ }
+
+ .recharts-layer.recharts.pie{
+  display: block;
+  margin: 0 auto;
+ }
+
+ ul.recharts-default-legend{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center !important;
+ }

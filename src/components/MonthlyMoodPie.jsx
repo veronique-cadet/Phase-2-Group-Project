@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
 
@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({
       dominantBaseline="central"
     >
       <>
-      {name}
+      {/* {name} */}
       {`${(percent * 100).toFixed(0)}%`}
       </>
     </text>
@@ -50,22 +50,22 @@ export default function WeeklyMoodPie ({logs}) {
   const moodCountByMood = getMoodCountByMood(logs.slice(-30))
   // console.log(moodCountByMood)
   const data = [
-    { name: " Rated 1 = ", value: moodCountByMood[1] },
-    { name: " Rated 2 = ", value: moodCountByMood[2] },
-    { name: " Rated 3 = ", value: moodCountByMood[3] },
-    { name: " Rated 4 = ", value: moodCountByMood[4] }, 
-    { name: " Rated 5 = ", value: moodCountByMood[5] }, 
+    { name: " 1 X( ", value: moodCountByMood[1] },
+    { name: " 2 :( ", value: moodCountByMood[2] },
+    { name: " 3 :| ", value: moodCountByMood[3] },
+    { name: " 4 :) ", value: moodCountByMood[4] }, 
+    { name: " 5 :D ", value: moodCountByMood[5] }, 
   ];
 
   return (
-    <PieChart width={610} height={610}>
+    <PieChart width={400} height={400}>
       <Pie
         data={data}
-        cx={300}
-        cy={300}
+        cx={150}
+        cy={150}
         labelLine={false}
         label={renderCustomizedLabel}
-        outerRadius={300}
+        outerRadius={150}
         fill="#8884d8"
         dataKey="value"
         strokeWidth={0}
@@ -74,6 +74,7 @@ export default function WeeklyMoodPie ({logs}) {
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
+      <Legend />
     </PieChart>
   );
 }
