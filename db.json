@@ -10,7 +10,7 @@
       "sleep": 7,
       "water": 5,
       "meals": 3,
-      "exercise": true,
+      "exercise": false,
       "meditation": true,
       "mood": 3
     },

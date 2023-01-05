@@ -14,12 +14,12 @@ const MonthlyStats = ({logs}) => {
   return (
     <div>
         <div>
-        <button onClick={()=>setChosenMonthlyChart(<MonthlySleepGraph logs={logs}/>)}>SLEEP</button>
-        <button onClick={()=>setChosenMonthlyChart(<MonthlyMoodPie logs={logs}/>)}>MOOD</button>
-        <button onClick={()=>setChosenMonthlyChart(<MonthlyWaterGraph logs={logs}/>)}>WATER</button>
-        <button onClick={()=>setChosenMonthlyChart(<MonthlyMealGraph logs={logs}/>)}>MEALS</button>
-        <button onClick={()=>setChosenMonthlyChart(<MonthlyExercisePie logs={logs}/>)}>EXERCISE</button>
-        <button onClick={()=>setChosenMonthlyChart(<MonthlyMeditationPie logs={logs}/>)}>MEDITATION</button>
+        <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlySleepGraph logs={logs}/>)}>SLEEP</button>
+        <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlyMoodPie logs={logs}/>)}>MOOD</button>
+        <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlyWaterGraph logs={logs}/>)}>WATER</button>
+        <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlyMealGraph logs={logs}/>)}>MEALS</button>
+        <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlyExercisePie logs={logs}/>)}>EXERCISE</button>
+        <button className="select-category" onClick={()=>setChosenMonthlyChart(<MonthlyMeditationPie logs={logs}/>)}>MEDITATION</button>
       <div/>
       </div>
        {chosenMonthlyChart=== "default" ? <MonthlySleepGraph logs={logs}/> : chosenMonthlyChart}
