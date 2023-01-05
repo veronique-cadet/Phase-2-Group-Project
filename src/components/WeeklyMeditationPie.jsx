@@ -1,6 +1,6 @@
 import { PieChart, Pie, Cell } from "recharts";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
+const COLORS = ["#bbe116", "#ff7678"];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -31,30 +31,27 @@ const renderCustomizedLabel = ({
     </text>
   );
 };
-// looping array to find number of mood counts
-const getMoodCountByMood = (logs) => {
-  const moodCountByMood = {}
+// looping array to find number of meditation counts
+const getMeditationCountByMeditation = (logs) => {
+  const meditationCountByMeditation = {}
   logs.forEach((log) => {
-    // console.log(moodCountByMood[log.mood])
-    if (moodCountByMood[log.mood]) {
-      moodCountByMood[log.mood]++
+    // console.log(meditationCountByMeditation)
+    if (meditationCountByMeditation[log.meditation]) {
+      meditationCountByMeditation[log.meditation]++
     } else {
-      moodCountByMood[log.mood] = 1
+      meditationCountByMeditation[log.meditation] = 1
     }
   })
-  return moodCountByMood
+  return meditationCountByMeditation
 }
 
-export default function WeeklyMoodPie ({logs}) {
+export default function WeeklyMeditationPie ({logs}) {
   // latest weekly data
-  const moodCountByMood = getMoodCountByMood(logs.slice(-30))
-  // console.log(moodCountByMood)
+  const meditationCountByMeditation = getMeditationCountByMeditation(logs.slice(-7))
+  // console.log(meditationCountByMeditation)
   const data = [
-    { name: " Rated 1 = ", value: moodCountByMood[1] },
-    { name: " Rated 2 = ", value: moodCountByMood[2] },
-    { name: " Rated 3 = ", value: moodCountByMood[3] },
-    { name: " Rated 4 = ", value: moodCountByMood[4] }, 
-    { name: " Rated 5 = ", value: moodCountByMood[5] }, 
+    { name: " Meditated = ", value: meditationCountByMeditation[true] },
+    { name: " Not Meditated = ", value: meditationCountByMeditation[false] }
   ];
 
   return (
