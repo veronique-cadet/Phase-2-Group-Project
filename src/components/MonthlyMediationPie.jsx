@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const COLORS = ["#bbe116", "#ff7678"];
@@ -55,25 +56,32 @@ export default function MonthlyMeditationPie ({logs}) {
   ];
 
   return (
-    <div className="pie-container">
-    <PieChart width={400} height={400}>
-      <Pie
-        data={data}
-        cx={150}
-        cy={150}
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={150}
-        fill="#8884d8"
-        dataKey="value"
-        strokeWidth={0}
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-      <Legend/>
-    </PieChart>
+    <div className="description-box">
+      <h1 className="title">Meditation</h1>
+      <p className="description">Are you practicing mindfulness? Each slice of this pie indicates 
+        the percent of the past week that you reported meditating or not. 
+
+        Click over to <Link to="/getzen">GET ZEN</Link> to set your preferred meditation environment.</p>
+      <div className="pie-container">
+      <PieChart width={400} height={400}>
+        <Pie
+          data={data}
+          cx={150}
+          cy={150}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={150}
+          fill="#8884d8"
+          dataKey="value"
+          strokeWidth={0}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Legend/>
+      </PieChart>
+      </div>
     </div>
   );
 }

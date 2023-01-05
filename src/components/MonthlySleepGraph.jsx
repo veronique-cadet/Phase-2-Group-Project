@@ -83,6 +83,9 @@ const getSleepCountBySleep = (logs) => {
         }
       ];
   return (
+    <div className="description-box">
+      <h1 className="title">Sleep</h1>
+      <p className="description">See your sleep pattern over the last month. The height of each bar on this graph indicates how many days throughout the month that you slept the corresponding number of hours.</p>
     <div className="pie-container">     
     <BarChart
       width={900}
@@ -102,5 +105,7 @@ const getSleepCountBySleep = (logs) => {
       <Bar dataKey="hours" fill="##3a5ed0" />
     </BarChart>
     </div>
+
+    </div> 
   );
 }

@@ -55,25 +55,29 @@ export default function MonthlyExercisePie ({logs}) {
   ];
 
   return (
-    <div className="pie-container">
-    <PieChart width={400} height={400}>
-      <Pie
-        data={data}
-        cx={150}
-        cy={150}
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={150}
-        fill="#8884d8"
-        dataKey="value"
-        strokeWidth={0}
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-      <Legend/>
-    </PieChart>
+    <div className="description-box">
+      <h1 className="title">Exercise</h1>
+      <p className="description">Have you moved your body this month? Each slice of this pie indicates the percent of the past month that you reported exercising or not.</p>
+      <div className="pie-container">
+      <PieChart width={400} height={400}>
+        <Pie
+          data={data}
+          cx={150}
+          cy={150}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={150}
+          fill="#8884d8"
+          dataKey="value"
+          strokeWidth={0}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Legend/>
+      </PieChart>
+      </div>
     </div>
   );
 }

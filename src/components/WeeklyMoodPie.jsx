@@ -64,7 +64,7 @@ export default function WeeklyMoodPie ({logs}) {
   const moodCountByMood = getMoodCountByMood(logs.slice(-7))
   // console.log(moodCountByMood)
   const data = [
-    { name: " 1 X( ", value: moodCountByMood[1] },
+    { name: " 1 >:( ", value: moodCountByMood[1] },
     { name: " 2 :( ", value: moodCountByMood[2] },
     { name: " 3 :| ", value: moodCountByMood[3] },
     { name: " 4 :) ", value: moodCountByMood[4] }, 
@@ -72,28 +72,32 @@ export default function WeeklyMoodPie ({logs}) {
   ];
 
   return (
-    <div className="pie-container">
-    <PieChart width={400} height={400}>
-      <Pie
-        data={data}
-        cx={150}
-        cy={150}
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={150}
-        fill="#8884d8"
-        dataKey="value"
-        strokeWidth={0}
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-      <Legend />
-    </PieChart>
-    <>
-      {/* <img src={moodObject["1"].src} width="25" height="25"/> */}
-    </>
+    <div className="description-box">
+      <h1 className="title">Mood</h1>
+      <p className="description">How have you been feeling lately? Each slice of this pie indicates the percent of the past week that you reported feeling terrible >:( , bad :( , neutral :| , good :) and great :D .</p>
+      <div className="pie-container">
+      <PieChart width={400} height={400}>
+        <Pie
+          data={data}
+          cx={150}
+          cy={150}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={150}
+          fill="#8884d8"
+          dataKey="value"
+          strokeWidth={0}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Legend />
+      </PieChart>
+      <>
+        {/* <img src={moodObject["1"].src} width="25" height="25"/> */}
+      </>
+      </div>
     </div>
   );
 }
