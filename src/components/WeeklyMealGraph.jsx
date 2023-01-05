@@ -16,6 +16,7 @@ const getMealCountByMeal = (logs) => {
   export default function WeeklyMealGraph({logs}) {
       
       const mealWeekCountByMeal = getMealCountByMeal(logs.slice(-7))
+      console.log(mealWeekCountByMeal)
 
       //for total count if necessary
       const mealTotalCountByMeal = getMealCountByMeal(logs)

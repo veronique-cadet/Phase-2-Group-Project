@@ -68,7 +68,7 @@
       "meals": 2,
       "exercise": false,
       "meditation": false,
-      "mood": "1"
+      "mood": 1
     },
     {
       "id": 6,
