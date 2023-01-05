@@ -50,11 +50,12 @@ export default function MonthlyMeditationPie ({logs}) {
   const meditationCountByMeditation = getMeditationCountByMeditation(logs.slice(-30))
   // console.log(meditationCountByMeditation)
   const data = [
-    { name: " Meditated = ", value: meditationCountByMeditation[true] },
+    { name: " Meditated ", value: meditationCountByMeditation[true] },
     { name: " Did Not Meditate ", value: meditationCountByMeditation[false] }
   ];
 
   return (
+    <div className="pie-container">
     <PieChart width={400} height={400}>
       <Pie
         data={data}
@@ -73,5 +74,6 @@ export default function MonthlyMeditationPie ({logs}) {
       </Pie>
       <Legend/>
     </PieChart>
+    </div>
   );
 }

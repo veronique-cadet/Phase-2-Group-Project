@@ -58,6 +58,7 @@ const getMealCountByMeal = (logs) => {
         }
       ];
   return (
+    <div className="pie-container">
     <BarChart
       width={900}
       height={300}
@@ -70,10 +71,11 @@ const getMealCountByMeal = (logs) => {
       }}
     >
       <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
-      <Tooltip />
-      <Legend />
+      <YAxis label=""/>
+      {/* <Tooltip /> */}
+      {/* <Legend /> */}
       <Bar dataKey="meals" fill="#ed9480" />
     </BarChart>
+    </div>
   );
 }

@@ -83,6 +83,7 @@ const getSleepCountBySleep = (logs) => {
         }
       ];
   return (
+    <div className="pie-container">     
     <BarChart
       width={900}
       height={300}
@@ -95,10 +96,11 @@ const getSleepCountBySleep = (logs) => {
       }}
     >
       <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
-      <Tooltip />
-      <Legend />
+      <YAxis label=""/>
+      {/* <Tooltip /> */}
+      {/* <Legend /> */}
       <Bar dataKey="hours" fill="##3a5ed0" />
     </BarChart>
+    </div>
   );
 }

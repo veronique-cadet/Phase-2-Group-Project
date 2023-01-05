@@ -55,6 +55,7 @@ export default function WeeklyMeditationPie ({logs}) {
   ];
 
   return (
+    <div className="pie-container">
     <PieChart width={400} height={400}>
       <Pie
         data={data}
@@ -73,5 +74,6 @@ export default function WeeklyMeditationPie ({logs}) {
       </Pie>
       <Legend align="left"/>
     </PieChart>
+    </div>
   );
 }

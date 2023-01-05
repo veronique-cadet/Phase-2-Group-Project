@@ -58,6 +58,7 @@ export default function WeeklyMoodPie ({logs}) {
   ];
 
   return (
+    <div className="pie-container">
     <PieChart width={400} height={400}>
       <Pie
         data={data}
@@ -76,5 +77,6 @@ export default function WeeklyMoodPie ({logs}) {
       </Pie>
       <Legend />
     </PieChart>
+    </div>
   );
 }

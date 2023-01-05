@@ -83,6 +83,7 @@ const getWaterCountByWater = (logs) => {
         }
       ];
   return (
+    <div className="pie-container">
     <BarChart
       width={900}
       height={400}
@@ -95,10 +96,11 @@ const getWaterCountByWater = (logs) => {
       }}
     >
       <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
-      <Tooltip />
-      <Legend />
+      <YAxis label=""/>
+      {/* <Tooltip /> */}
+      {/* <Legend /> */}
       <Bar dataKey="cups" fill="#9acef0" />
     </BarChart>
+    </div>
   );
 }

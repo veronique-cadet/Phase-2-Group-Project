@@ -72,17 +72,18 @@ const getSleepCountBySleep = (logs) => {
           amt: sleepTotalCountBySleep[10]
         },
         {
-          name: "11 hours ",
+          name: "11 => hours ",
           hours: sleepWeekCountBySleep[11],
           amt: sleepTotalCountBySleep[11]
         },
-        {
-          name: "12 => hours",
-          hours: sleepWeekCountBySleep[12],
-          amt: sleepTotalCountBySleep[12]
-        }
+        // {
+        //   name: "12 => hours",
+        //   hours: sleepWeekCountBySleep[12],
+        //   amt: sleepTotalCountBySleep[12]
+        // }
       ];
   return (
+    <div className="pie-container">
     <BarChart
       width={900}
       height={400}
@@ -96,9 +97,11 @@ const getSleepCountBySleep = (logs) => {
     >
       <XAxis dataKey="name"/>
       <YAxis label=""/>
-      <Tooltip />
-      <Legend />
+      {/* <Tooltip /> */}
+      {/* <Legend /> */}
       <Bar dataKey="hours" fill="##3a5ed0" />
     </BarChart>
+
+    </div>
   );
 }
