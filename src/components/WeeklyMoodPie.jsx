@@ -50,11 +50,11 @@ export default function WeeklyMoodPie ({logs}) {
   const moodCountByMood = getMoodCountByMood(logs.slice(-7))
   // console.log(moodCountByMood)
   const data = [
-    { name: " Rated 1 ", value: moodCountByMood[1] },
-    { name: " Rated 2", value: moodCountByMood[2] },
-    { name: " Rated 3", value: moodCountByMood[3] },
-    { name: " Rated 4", value: moodCountByMood[4] }, 
-    { name: " Rated 5", value: moodCountByMood[5] }, 
+    { name: " Rated 1 = ", value: moodCountByMood[1] },
+    { name: " Rated 2 = ", value: moodCountByMood[2] },
+    { name: " Rated 3 = ", value: moodCountByMood[3] },
+    { name: " Rated 4 = ", value: moodCountByMood[4] }, 
+    { name: " Rated 5 = ", value: moodCountByMood[5] }, 
   ];
 
   return (

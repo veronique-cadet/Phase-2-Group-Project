@@ -3,6 +3,8 @@ import WeeklySleepGraph from "./WeeklySleepGraph";
 import WeeklyMoodPie from "./WeeklyMoodPie";
 import WeeklyWaterGraph from "./WeeklyWaterGraph";
 import WeeklyMealGraph from "./WeeklyMealGraph";
+import WeeklyExercisePie from "./WeeklyExercisePie";
+import WeeklyMeditationPie from "./WeeklyMeditationPie";
 
 
 const WeeklyStats = ({logs}) => {
@@ -16,6 +18,8 @@ const WeeklyStats = ({logs}) => {
         <button onClick={()=>setChosenWeeklyChart(<WeeklyMoodPie logs={logs}/>)}>MOOD</button>
         <button onClick={()=>setChosenWeeklyChart(<WeeklyWaterGraph logs={logs}/>)}>WATER</button>
         <button onClick={()=>setChosenWeeklyChart(<WeeklyMealGraph logs={logs}/>)}>MEALS</button>
+        <button onClick={()=>setChosenWeeklyChart(<WeeklyExercisePie logs={logs}/>)}>EXERCISE</button>
+        <button onClick={()=>setChosenWeeklyChart(<WeeklyMeditationPie logs={logs}/>)}>MEDITATION</button>
       <div/>
       </div>
        {chosenWeeklyChart=== "default" ? <WeeklySleepGraph logs={logs}/> : chosenWeeklyChart}          
