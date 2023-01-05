@@ -1,36 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
-export default function GetZen() {
-  const [select, setSelect] = useState("waves");
+export default function GetZen({ setHome }) {
+  setHome(true);
 
-  const waves = "/assets/lotus (2).png";
+  const [selectImage, setSelectImage] = useState("/assets/waves.mp4");
+  // const [selectMusic, setSelectMusic] = useState();
 
-  const backGroundImg = "/assets/waves.jpg";
-  const testImage = "/assets/four.png";
-  
-  const setBackgroundImage = () => {
-    console.log(backGroundImg)
-    if (select === "waves")
-      return {
-        backGroundImg,
-      };
-    else if (select === "rain")
-      return {
-        waves,
-      };
-    else return { testImage };
+  const videoRef = useRef();
 
-  };
+  useEffect(() => {
+    videoRef.current?.load();
+  }, [selectImage]);
 
   return (
     <div className="other-pages">
-      <select onChange={(e) => setSelect(e.target.value)} name="cars" id="cars">
-        <option value="waves">Waves</option>
-        <option value="rain">Rain</option>
-        <option value="forest">Forest</option>
-        <option value="birds">Birds</option>
+      <div className="zen-image-dropdown-div">
+        <h1 className="zen-image-title">Select Experience</h1>
+        <select
+          className="image-select"
+          onChange={(e) => setSelectImage(e.target.value)}
+        >
+          <option value="/assets/waves.mp4">Waves</option>
+          <option value="/assets/rain.mp4">Rain</option>
+          <option value="/assets/waterfall.mp4">Forest</option>
+          <option value="/assets/bird.mp4">Birds</option>
+        </select>
+        <video
+          ref={videoRef}
+          id="video"
+          muted
+          autoPlay={"autopnpmlay"}
+          preload="auto"
+          loop
+        >
+          <source src={selectImage} type="video/mp4" />
+        </video>
+      </div>
+      {/* <select onChange={(e) => setSelectMusic(e.target.value)}>
+        <option value="">Waves</option>
+        <option value="">Rain</option>
+        <option value="">Forest</option>
+        <option value="">Birds</option>
       </select>
-      <img src={setBackgroundImage()} alt="back ground" />
+      <audio controls>
+        <source src="horse.mp3" type="audio/mpeg"></source>
+      </audio> */}
     </div>
   );
 }
