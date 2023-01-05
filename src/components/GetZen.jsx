@@ -12,6 +12,15 @@ export default function GetZen({ setHome }) {
     videoRef.current?.load();
   }, [selectImage]);
 
+  const waveSound = new Audio("/assets/waves.mp3")
+  const forestSound = new Audio("/assets/forest.mp3")
+  const rainSound = new Audio("/assets/rain.mp3")
+  const streamSound = new Audio("/assets/stream.mp3")
+
+
+
+
+
   return (
     <div className="other-pages">
       <div className="zen-image-dropdown-div">
@@ -35,6 +44,8 @@ export default function GetZen({ setHome }) {
         >
           <source src={selectImage} type="video/mp4" />
         </video>
+      <button onClick={() => waveSound.play()}> Play</button>
+      <button onClick={() => waveSound.pause()}> Pause</button>
       </div>
       {/* <select onChange={(e) => setSelectMusic(e.target.value)}>
         <option value="">Waves</option>
