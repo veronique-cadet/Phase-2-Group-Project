@@ -58,7 +58,7 @@ export default function WeeklyMoodPie ({logs}) {
   ];
 
   return (
-    <PieChart width={610} height={600}>
+    <PieChart width={610} height={610}>
       <Pie
         data={data}
         cx={300}

@@ -368,7 +368,15 @@ nav a.active {
   width: 140px;
 }
 
-.selected-category{
+.select-category:hover {
+  background-color: #cce8b0;
+}
+
+.select-category:active{
+  background-color: #cce8b0;
+}
+
+/* .selected-category{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   margin-right: .5rem;
@@ -385,7 +393,7 @@ nav a.active {
   height: 50px;
   width: 140px;
   background-color: #cce8b0;
-}
+} */
 
 .time-options {
   display: flex;
