@@ -306,3 +306,58 @@ nav a.active {
   border-radius: 20px;
   -webkit-user-select: none;
 }
+
+.select-category {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  background-color: #f9dbeb;
+  border: #cde2ff;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  height: 50px;
+  width: 140px;
+}
+
+.selected-category{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  
+  border: #cde2ff;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  height: 50px;
+  width: 140px;
+  background-color: #cce8b0;
+}
+
+.time-options {
+  display: flex;
+  margin-right: 4rem;
+  justify-content: flex-end;
+}
+
+.time-item {
+  margin-left: 3rem;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 500;
+  border: none;
+}
+
+.time-item:active {
+  background-color: #cde2ff;
+}
