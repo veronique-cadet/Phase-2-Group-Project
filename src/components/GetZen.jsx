@@ -12,15 +12,22 @@ export default function GetZen({ setHome }) {
     videoRef.current?.load();
   }, [selectImage]);
 
-  const waveSound = new Audio("/assets/waves.mp3")
-  const forestSound = new Audio("/assets/forest.mp3")
-  const rainSound = new Audio("/assets/rain.mp3")
-  const streamSound = new Audio("/assets/stream.mp3")
+  const waveSound = new Audio("/assets/waves.mp3");
+  const forestSound = new Audio("/assets/forest.mp3");
+  const rainSound = new Audio("/assets/rain.mp3");
+  const streamSound = new Audio("/assets/stream.mp3");
 
-
-
-
-
+  const playSound = () => {
+    if (selectImage === "/assets/waves.mp4") {
+      return waveSound;
+    } else if (selectImage === "/assets/rain.mp4") {
+      return rainSound;
+    } else if (selectImage === "/assets/waterfall.mp4") {
+      return streamSound;
+    } else if (selectImage === "/assets/bird.mp4") {
+      return forestSound;
+    } else return "/assets/waves.mp4";
+  };
   return (
     <div className="other-pages">
       <div className="zen-image-dropdown-div">
@@ -31,7 +38,7 @@ export default function GetZen({ setHome }) {
         >
           <option value="/assets/waves.mp4">Waves</option>
           <option value="/assets/rain.mp4">Rain</option>
-          <option value="/assets/waterfall.mp4">Forest</option>
+          <option value="/assets/waterfall.mp4">Stream</option>
           <option value="/assets/bird.mp4">Birds</option>
         </select>
         <video
@@ -44,9 +51,15 @@ export default function GetZen({ setHome }) {
         >
           <source src={selectImage} type="video/mp4" />
         </video>
-      <button onClick={() => waveSound.play()}> Play</button>
-      <button onClick={() => waveSound.pause()}> Pause</button>
       </div>
+      <button className="button" onClick={() => playSound().play()}>
+        {" "}
+        Play
+      </button>
+      <button className="button" onClick={() => playSound().pause()}>
+        {" "}
+        Pause
+      </button>
       {/* <select onChange={(e) => setSelectMusic(e.target.value)}>
         <option value="">Waves</option>
         <option value="">Rain</option>
