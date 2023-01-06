@@ -368,9 +368,14 @@ nav a.active {
 }
 
 .select-category {
+<<<<<<< HEAD
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+=======
 
   margin-top: 2rem;
   margin-bottom: 2rem;
+>>>>>>> 5bd7e687fa97ed35add6555f67dc37ecbfd39876
   margin-right: .5rem;
   margin-left: .5rem;
 
@@ -433,6 +438,12 @@ nav a.active {
   background-color: #cde2ff;
 }
 
+<<<<<<< HEAD
+.time-container {
+  padding-bottom: 2rem;
+}
+=======
+>>>>>>> 5bd7e687fa97ed35add6555f67dc37ecbfd39876
 
 .chart-container {
   border: 1px #cde2ff solid;
