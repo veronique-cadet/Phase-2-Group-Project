@@ -1,0 +1,26 @@
+.zen-image-title {
+  color: white;
+  font-weight: 500;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.zen-image-dropdown-div {
+  margin-right: 90rem;
+  margin-top: 10rem;
+}
+
+.image-select {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #cde2ff;
+  font-size: 20px;
+  font-weight: 8;
+  color: rgb(138, 134, 134);
+  border: none;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

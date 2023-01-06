@@ -12,7 +12,7 @@ export default function Header({ home }) {
         <Link to="/">
           <h1 className="header-title">Lotus</h1>
         </Link>
-        <img id="nav-icon" src="assets/lotus (3).png" alt="lotus" />
+        <img id="nav-icon" src="/assets/lotus (3).png" alt="lotus" />
       </div>
       <NavBar />
     </div>
