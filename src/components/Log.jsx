@@ -47,7 +47,7 @@ const Log = ({ logs, setLogs }) => {
   };
 
   const handleSubmit = () => {
-    fetch("http://localhost:3005/logs", {
+    fetch("http://localhost:3001/logs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -198,7 +198,7 @@ const Log = ({ logs, setLogs }) => {
           </button>
         ) : (
           <button onClick={() => setIsClicked(!isClicked)} id="form-submit-two">
-            Edit Log
+            Submitted!
           </button>
         )}
       </form>
