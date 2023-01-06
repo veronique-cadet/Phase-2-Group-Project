@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./GetZen.css";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Log from "./components/Log";
@@ -25,7 +26,7 @@ function App() {
           <Stats setHome={setHome} logs={logs} setLogs={setLogs} />
         </Route>
         <Route path="/getzen">
-          <GetZen />
+          <GetZen setHome={setHome} />
         </Route>
         <Route path="*">
           <h1>404 not found namaste</h1>
