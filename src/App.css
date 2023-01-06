@@ -244,14 +244,6 @@ nav a.active {
   margin-bottom: 1.5rem;
 }
 
-.quote {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 8rem;
-  margin-bottom: 1rem;
-}
-
 /* //daily */
 .daily-stats {
   text-align: center;
@@ -390,8 +382,23 @@ nav a.active {
   background-color: #cce8b0;
 }
 
-.select-category:active {
+.select-category-two {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+
   background-color: #cce8b0;
+  border: #cde2ff;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  height: 50px;
+  width: 140px;
 }
 
 /* .selected-category{
@@ -428,7 +435,7 @@ nav a.active {
   border: none;
 }
 
-.time-item:active {
+.time-item: {
   background-color: #cde2ff;
 }
 
@@ -515,4 +522,8 @@ ul.recharts-default-legend {
   padding-top: 0rem;
   padding-bottom: 1rem;
   color: rgba(0, 0, 0, 0.598);
+}
+
+.time-container {
+  margin-bottom: 1rem;
 }
