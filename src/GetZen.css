@@ -6,8 +6,6 @@
 }
 
 .zen-image-dropdown-div {
-  margin-right: 90rem;
-  margin-top: 10rem;
 }
 
 .image-select {
@@ -23,4 +21,8 @@
   margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.button{
+    
 }
