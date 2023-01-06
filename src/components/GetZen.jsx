@@ -4,8 +4,6 @@ export default function GetZen({ setHome }) {
   setHome(true);
 
   const [selectImage, setSelectImage] = useState("/assets/waves.mp4");
-  // const [selectMusic, setSelectMusic] = useState();
-
   const videoRef = useRef();
 
   useEffect(() => {
@@ -28,6 +26,7 @@ export default function GetZen({ setHome }) {
       return forestSound;
     } else return "/assets/waves.mp4";
   };
+
   return (
     <div className="other-pages">
       <div className="zen-image-dropdown-div">
@@ -52,23 +51,22 @@ export default function GetZen({ setHome }) {
           <source src={selectImage} type="video/mp4" />
         </video>
       </div>
-      <button className="button" onClick={() => playSound().play()}>
-        {" "}
-        Play
-      </button>
-      <button className="button" onClick={() => playSound().pause()}>
-        {" "}
-        Pause
-      </button>
-      {/* <select onChange={(e) => setSelectMusic(e.target.value)}>
-        <option value="">Waves</option>
-        <option value="">Rain</option>
-        <option value="">Forest</option>
-        <option value="">Birds</option>
-      </select>
-      <audio controls>
-        <source src="horse.mp3" type="audio/mpeg"></source>
-      </audio> */}
+      <div className="button-div">
+        <img
+          src="/assets/play.png"
+          className="button"
+          onClick={() => {
+            playSound().play();
+          }}
+        />
+        <img
+          src="/assets/pause.png"
+          className="button"
+          onClick={() => {
+            playSound().pause();
+          }}
+        />
+      </div>
     </div>
   );
 }
