@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
 
@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({
       dominantBaseline="central"
     >
       <>
-      {name}
+      {/* {name} */}
       {`${(percent * 100).toFixed(0)}%`}
       </>
     </text>
@@ -50,27 +50,34 @@ export default function MonthlyExercisePie ({logs}) {
   const exerciseCountByExercise = getExerciseCountByExercise(logs.slice(-30))
   // console.log(exerciseCountByExercise)
   const data = [
-    { name: " Exercised = " , value: exerciseCountByExercise[true] },
-    { name: " Not Exercised = ", value: exerciseCountByExercise[false] }
+    { name: " Exercised " , value: exerciseCountByExercise[true] },
+    { name: " Did Not Exercise ", value: exerciseCountByExercise[false] }
   ];
 
   return (
-    <PieChart width={610} height={610}>
-      <Pie
-        data={data}
-        cx={300}
-        cy={300}
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={300}
-        fill="#8884d8"
-        dataKey="value"
-        strokeWidth={0}
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-    </PieChart>
+    <div className="description-box">
+      <h1 className="title">Exercise</h1>
+      <p className="description">Have you moved your body this month? Each slice of this pie indicates the percent of the past month that you reported exercising or not.</p>
+      <div className="pie-container">
+      <PieChart width={400} height={400}>
+        <Pie
+          data={data}
+          cx={150}
+          cy={150}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={150}
+          fill="#8884d8"
+          dataKey="value"
+          strokeWidth={0}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Legend/>
+      </PieChart>
+      </div>
+    </div>
   );
 }

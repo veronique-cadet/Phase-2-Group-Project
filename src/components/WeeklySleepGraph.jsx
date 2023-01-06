@@ -72,33 +72,39 @@ const getSleepCountBySleep = (logs) => {
           amt: sleepTotalCountBySleep[10]
         },
         {
-          name: "11 hours ",
+          name: "11 => hours ",
           hours: sleepWeekCountBySleep[11],
           amt: sleepTotalCountBySleep[11]
         },
-        {
-          name: "12 => hours",
-          hours: sleepWeekCountBySleep[12],
-          amt: sleepTotalCountBySleep[12]
-        }
+        // {
+        //   name: "12 => hours",
+        //   hours: sleepWeekCountBySleep[12],
+        //   amt: sleepTotalCountBySleep[12]
+        // }
       ];
   return (
-    <BarChart
-      width={1300}
-      height={600}
-      data={data}
-      margin={{
-        top: 5,
-        right: 35,
-        left: 20,
-        bottom: 5
-      }}
-    >
-      <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="hours" fill="##3a5ed0" />
-    </BarChart>
+    <div className="description-box">
+      <h1 className="title">Sleep</h1>
+      <p className="description">See your sleep pattern over the last week. The height of each bar on this graph indicates how many days throughout the week that you slept the corresponding number of hours.</p>
+      <div className="pie-container">
+      <BarChart
+        width={900}
+        height={400}
+        data={data}
+        margin={{
+          top: 5,
+          right: 35,
+          left: 20,
+          bottom: 5
+        }}
+      >
+        <XAxis dataKey="name"/>
+        <YAxis label=""/>
+        {/* <Tooltip /> */}
+        {/* <Legend /> */}
+        <Bar dataKey="hours" fill="##3a5ed0" />
+      </BarChart>      
+      </div>
+    </div>
   );
 }

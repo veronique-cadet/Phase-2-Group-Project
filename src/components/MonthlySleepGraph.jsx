@@ -83,9 +83,13 @@ const getSleepCountBySleep = (logs) => {
         }
       ];
   return (
+    <div className="description-box">
+      <h1 className="title">Sleep</h1>
+      <p className="description">See your sleep pattern over the last month. The height of each bar on this graph indicates how many days throughout the month that you slept the corresponding number of hours.</p>
+    <div className="pie-container">     
     <BarChart
-      width={1300}
-      height={600}
+      width={900}
+      height={300}
       data={data}
       margin={{
         top: 5,
@@ -95,10 +99,13 @@ const getSleepCountBySleep = (logs) => {
       }}
     >
       <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
-      <Tooltip />
-      <Legend />
+      <YAxis label=""/>
+      {/* <Tooltip /> */}
+      {/* <Legend /> */}
       <Bar dataKey="hours" fill="##3a5ed0" />
     </BarChart>
+    </div>
+
+    </div> 
   );
 }

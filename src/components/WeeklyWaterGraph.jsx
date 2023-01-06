@@ -83,22 +83,28 @@ const getWaterCountByWater = (logs) => {
         }
       ];
   return (
-    <BarChart
-      width={1300}
-      height={600}
-      data={data}
-      margin={{
-        top: 5,
-        right: 35,
-        left: 20,
-        bottom: 5
-      }}
-    >
-      <XAxis dataKey="name"/>
-      <YAxis label="Days"/>
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="cups" fill="#9acef0" />
-    </BarChart>
+    <div className="description-box">
+      <h1 className="title">Water</h1>
+      <p className="description">Make sure you’re staying hydrated! The height of each bar on this graph indicates how many days throughout the week that you drank the corresponding number of cups of water.</p>
+      <div className="pie-container">
+      <BarChart
+        width={900}
+        height={400}
+        data={data}
+        margin={{
+          top: 5,
+          right: 35,
+          left: 20,
+          bottom: 5
+        }}
+      >
+        <XAxis dataKey="name"/>
+        <YAxis label=""/>
+        {/* <Tooltip /> */}
+        {/* <Legend /> */}
+        <Bar dataKey="cups" fill="#9acef0" />
+      </BarChart>
+      </div>
+    </div>
   );
 }

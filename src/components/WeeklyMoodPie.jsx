@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Legend } from "recharts";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ffc0cb"];
 
@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({
       dominantBaseline="central"
     >
       <>
-      {name}
+      {/* {name} */}
       {`${(percent * 100).toFixed(0)}%`}
       </>
     </text>
@@ -45,35 +45,59 @@ const getMoodCountByMood = (logs) => {
   return moodCountByMood
 }
 
+const oneMood = "/assets/one.png";
+const twoMood = "/assets/two.png";
+const threeMood = "/assets/three.png";
+const fourMood = "/assets/four.png";
+const fiveMood = "/assets/five.png";
+
+const moodObject = {
+  "1": {src: "/assets/one.png", color: "green"},
+  "2": "/assets/two.png",
+  "3": "/assets/three.png",
+  "4": "/assets/four.png",
+  "5": "/assets/five.png"
+}
+
 export default function WeeklyMoodPie ({logs}) {
   // latest weekly data
   const moodCountByMood = getMoodCountByMood(logs.slice(-7))
   // console.log(moodCountByMood)
   const data = [
-    { name: " Rated 1 = ", value: moodCountByMood[1] },
-    { name: " Rated 2 = ", value: moodCountByMood[2] },
-    { name: " Rated 3 = ", value: moodCountByMood[3] },
-    { name: " Rated 4 = ", value: moodCountByMood[4] }, 
-    { name: " Rated 5 = ", value: moodCountByMood[5] }, 
+    { name: " 1 >:( ", value: moodCountByMood[1] },
+    { name: " 2 :( ", value: moodCountByMood[2] },
+    { name: " 3 :| ", value: moodCountByMood[3] },
+    { name: " 4 :) ", value: moodCountByMood[4] }, 
+    { name: " 5 :D ", value: moodCountByMood[5] }, 
   ];
 
   return (
-    <PieChart width={610} height={610}>
-      <Pie
-        data={data}
-        cx={300}
-        cy={300}
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={300}
-        fill="#8884d8"
-        dataKey="value"
-        strokeWidth={0}
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-    </PieChart>
+    <div className="description-box">
+      <h1 className="title">Mood</h1>
+      <p className="description">How have you been feeling lately? Each slice of this pie indicates the percent of the past week that you reported feeling terrible >:( , bad :( , neutral :| , good :) and great :D .</p>
+      <div className="pie-container">
+      <PieChart width={400} height={400}>
+        <Pie
+          data={data}
+          cx={150}
+          cy={150}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={150}
+          fill="#8884d8"
+          dataKey="value"
+          strokeWidth={0}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Legend />
+      </PieChart>
+      <>
+        {/* <img src={moodObject["1"].src} width="25" height="25"/> */}
+      </>
+      </div>
+    </div>
   );
 }
